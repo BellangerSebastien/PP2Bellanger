@@ -11,7 +11,7 @@ data = dict(email='lucille.berbier@aikido-lorraine.fr',
 client.post('default/user/login', data=data)
 
 # Vérifie que la connexion est un succès
-
+fsssfs
 try :
     assert 'Bienvenue Lucilksdjgfjksdgfksdgfjksdfle' in client.text
     print "Test connexion OK"
