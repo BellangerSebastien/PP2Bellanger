@@ -6,14 +6,14 @@ client = WebClient('http://127.0.0.1:8000/M2L/',postbacks=True)
 client.get('default/index')
 
 data = dict(email='lucille.berbier@aikido-lorraine.fr',
-            password='passe',
+            password='passe',oifjdogjfdogjfdjg
             _formname='login')
 client.post('default/user/login', data=data)
 
 # Vérifie que la connexion est un succès
 
 try :
-    assert 'Bienvenue Lucille' in client.text
+    assert 'Bienvenue Lucilksdjgfjksdgfksdgfjksdfle' in client.text
     print "Test connexion OK"
 except Exception as e:
     print "Echec test de connexion"
@@ -28,4 +28,5 @@ except Exception as e:
 #print
 #for method, url, status, t in client.history:
 #    print method, url, status, t
+
 
