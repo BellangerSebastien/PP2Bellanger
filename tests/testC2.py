@@ -1,22 +1,25 @@
 # coding: utf-8
 from gluon.contrib.webclient import WebClient
 
-client = WebClient('http://127.0.0.1:8000/M2L/',postbacks=True)
+client = WebClient('http://172.21.101.31/M2L/',postbacks=True)
 
 client.get('default/index')
 
-data = dict(email='lucille.berbier@aikido-lorraine.fr',
+data1 = dict(email='lucille.berbier@aikido-lorraine.fr',
             password='passe',
             _formname='login')
-client.post('default/user/login', data=data)
+client.post('default/user/login', data=data1)
+
+client.post('default/user/logout')
+
 
 # Vérifie que la connexion est un succès
 
 try :
-    assert 'Bienvenue Lucilksdjgfjksdgfksdgfjksdfle' in client.text
-    print "Test connexion OK"
+    assert 'Déconnecté' in client.text
+    print "Test de Déconnexion : OK"
 except Exception as e:
-    print "Echec test de connexion C1"
+    print "Echec test de Déconnexion"
 
 
 # DEBUG -------
@@ -28,5 +31,3 @@ except Exception as e:
 #print
 #for method, url, status, t in client.history:
 #    print method, url, status, t
-
-
