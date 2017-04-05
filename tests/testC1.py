@@ -6,7 +6,7 @@ client = WebClient('http://127.0.0.1:8000/M2L/',postbacks=True)
 client.get('default/index')
 
 data = dict(email='lucille.berbier@aikido-lorraine.fr',
-            password='passe',
+            password='passe',fdgdg
             _formname='login')
 client.post('default/user/login', data=data)
 
