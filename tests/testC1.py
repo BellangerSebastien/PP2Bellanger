@@ -19,6 +19,7 @@ except Exception as e:
     print "Echec test de connexion C1"
 
 
+
 # DEBUG -------
 #print '\ncontenu:\n', client.text
 #print '\nsessions:\n', client.sessions

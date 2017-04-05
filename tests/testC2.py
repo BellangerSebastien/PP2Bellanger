@@ -22,6 +22,7 @@ except Exception as e:
     print "Echec test de Déconnexion"
 
 
+
 # DEBUG -------
 #print '\ncontenu:\n', client.text
 #print '\nsessions:\n', client.sessions

@@ -19,6 +19,7 @@ except Exception as e:
     print "Echec test de connexion avec ID non valide"
 
 
+
 # DEBUG -------
 #print '\ncontenu:\n', client.text
 #print '\nsessions:\n', client.sessions

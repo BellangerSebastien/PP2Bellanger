@@ -18,6 +18,7 @@ try :
 except Exception as e:
     print "Echec test de connexion avec mot de passe incorrect"
 
+
 # DEBUG -------
 #print '\ncontenu:\n', client.text
 #print '\nsessions:\n', client.sessions

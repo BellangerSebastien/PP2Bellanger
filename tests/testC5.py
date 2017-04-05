@@ -18,6 +18,7 @@ try :
 except Exception as e:
     print "Echec de la connexion avec un champ vide"
 
+
 # DEBUG -------
 #print '\ncontenu:\n', client.text
 #print '\nsessions:\n', client.sessions
