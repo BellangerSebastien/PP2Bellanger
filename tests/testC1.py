@@ -16,7 +16,7 @@ try :
     assert 'Bienvenue Lucilksdjgfjksdgfksdgfjksdfle' in client.text
     print "Test connexion OK"
 except Exception as e:
-    print "Echec test de connexion"
+    print "Echec test de connexion C1"
 
 
 # DEBUG -------
